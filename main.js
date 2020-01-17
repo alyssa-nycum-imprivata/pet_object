@@ -11,6 +11,24 @@ const conway = {
     },
     scream: function () {
         console.log("MEEEEEEOOOOOOWWWW");
+    },
+    toys: [
+        fish_taco = {
+            likesToy: true
+        },
+        soccer_ball = {
+            likesToy: true
+        },
+        bouncy_ball = {
+            likesToy = false
+        },
+        laser_pointer = {
+            likesToy = true
+        }
+    ],
+    favoriteToys: [],
+    play: function (toy) {
+        if ()
     }
 };
 
