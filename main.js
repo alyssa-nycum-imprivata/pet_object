@@ -13,28 +13,58 @@ const conway = {
         console.log("MEEEEEEOOOOOOWWWW");
     },
     toys: [
-        fish_taco = {
-            likesToy: true
-        },
-        soccer_ball = {
-            likesToy: true
-        },
-        bouncy_ball = {
-            likesToy = false
-        },
-        laser_pointer = {
-            likesToy = true
-        }
-    ],
+        
+            {
+                name: "fish taco",
+                likesToy: true
+            },
+
+            {
+                name: "soccer ball",
+                likesToy: true
+            },
+
+            {
+                name: "bouncy ball",
+                likesToy: false
+            },
+
+            {
+                name: "laser pointer",
+                likesToy: true
+            },
+
+            {
+                name: "mouse",
+                likesToy: true
+            },
+
+            {
+                name: "stuffed rhino",
+                likesToy: false
+            }
+        
+        ],
     favoriteToys: [],
-    play: function (toy) {
-        if ()
+    play: function () {
+        for (let i = 0; i < this.toys.length; i++) {
+            if (this.toys[i].likesToy === true) {
+                // console.log(conway.toys[i].name);
+                // toy = this.toys[i].name;
+                this.favoriteToys.push(this.toys[i].name);
+            }
+        }
     }
-};
+}
 
 conway.meow();
 conway.hiss();
 conway.scream();
+
+conway.play();
+console.log(conway.favoriteToys);
+
+
 
 
 
